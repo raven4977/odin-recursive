@@ -10,3 +10,14 @@ function fibs(num) {
 }
 
 console.log(fibs(8));
+
+function fibsRec(num) {
+  if (num <= 0) return [];
+  if (num === 1) return [0];
+  if (num === 2) return [0, 1];
+  const numArray = fibsRec(num - 1);
+  numArray.push(numArray[num - 2] + numArray[num - 3]);
+  return numArray;
+}
+
+console.log(fibsRec(5));
