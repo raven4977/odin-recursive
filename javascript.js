@@ -20,4 +20,4 @@ function fibsRec(num) {
   return numArray;
 }
 
-console.log(fibsRec(5));
+console.log(fibsRec(8));
